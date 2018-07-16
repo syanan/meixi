@@ -1,0 +1,566 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.full {
+	min-width: 1200px;
+	width: 100%;
+}
+
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.mian {
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	/*margin-bottom:20px;*/
+	background: white;
+}
+
+.member-header {
+	font-size: 14px;
+	height: 146px;
+	line-height: 146px;
+	/*border: 1px red solid;*/
+}
+
+
+/*.member-header>a{
+	display: inline-block;
+	border: 1px red solid; 
+}*/
+
+.logoBox {
+	background: url(../img/logo_02.png) no-repeat center;
+	width: 131px;
+	height: 65px;
+	margin-top: 39px;
+	float: left;
+}
+
+.headerNav-r {
+	float: right;
+	/*border: 1px red solid;*/
+}
+
+.headerNav-r>div {
+	float: left;
+	position: relative;
+}
+
+.help {
+	left: -38px;
+}
+
+.member_phone {
+	top: 63px;
+	left: -23px;
+}
+
+.hico01 {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/headico.png) no-repeat;
+	position: absolute;
+}
+
+.headerShadow {
+	background: url(../img/headerbg.png) 0 bottom repeat-x;
+	width: 100%;
+	height: 8px;
+	margin-bottom: 20px;
+}
+.containerBox{
+	/*height: 200px;
+	width:100%;
+	background: red;*/
+	
+}
+.orderNavBox{
+	background: #f4f4f4;
+    border-bottom: solid 1px #e4e4e4;
+    border-top: solid 1px #e4e4e4;
+}
+.orderNav{
+	
+	height: 57px;
+    margin: 0 auto;
+    background: url(../img/ordernav.gif) no-repeat;
+    background-position: 0 -57px;
+}
+.orderMain{
+	margin-top: 30px;
+    border: solid 1px #e8e8e8;
+}
+.orderMainBox{
+	margin: 0 30px;
+	/*border: 1px red solid;*/
+}
+.orderbox_tit {
+    padding: 18px 0 25px 0;
+    font-size: 14px;
+    color: #333;
+}
+a.acclink {
+    color: #669aca;
+}
+.orderbox_tit>a:first-child{
+	float: left;
+}
+.orderbox_tit>a:nth-child(2){
+	float: right;
+}
+
+.shr_add_address {
+    margin-left: 20px;
+}
+.shrAddress_box{
+	padding: 20px;
+}
+.all-adress{
+	position: relative;
+    
+    overflow: hidden;
+}
+.aderess{
+	margin: 0 0 20px 0;
+    cursor: pointer;
+    line-height: 33px;
+    position: relative;
+    height: 55px;
+}
+.shr-name{
+	width: 85px;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.shr-name{
+	border: solid 1px #333;
+    position: relative;
+    float: left;
+}
+.shr-name>em{
+	display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/orderico.png) 0 0 no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+.shr-adress{
+	float: left;
+	margin-left: 30px;
+    width: 540px;
+}
+.shr-phone{
+	float: left;
+	width: 140px;
+    margin-left: 30px;
+}
+.shr-operation{
+	float: right;
+	display: none;
+}
+.shr-operation a{
+	
+	margin-left: 10px;
+    color: #669aca;
+}
+.aderess:hover .shr-operation{
+	display: block;
+}
+.cover{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+    left: 0;
+    background: #000;
+    /*opacity: 0.5;*/
+   background: rgba(0,0,0,0.5);
+    z-index: 110;
+}
+.ac_medium {
+    width: 480px;
+}
+
+
+.ac_box {
+    /*display: none;*/
+    /*min-height: 140px;*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: solid 1px #eee;
+    background: #fff;
+    box-shadow: 0 0 3px #ccc;
+    color: #333;
+    z-index: 111;
+}
+.ac_box .ac_box_tit {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 25px;
+    color: #999;
+    background: #f8f8f8;
+    font-size: 14px;
+    position: relative;
+}
+.ac_box_msg {
+    text-align: center;
+    padding: 50px 0 10px 0;
+    font-size: 14px;
+}
+.ac_btn_box {
+    padding: 30px 0 40px 0;
+    text-align: center;
+}
+.ac_btn_box a {
+    display: inline-block;
+    width: 118px;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 19px;
+    border-radius: 3px;
+}
+.ab_btn01 {
+    border: solid 1px #333;
+    background: #333;
+    color: #fff;
+}
+.ac_btn_box a {
+    display: inline-block;
+    width: 118px;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 19px;
+    border-radius: 3px;
+}
+.ab_btn02 {
+    border: solid 1px #e8e8e8;
+}
+.shan{
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+.shr_more_address{
+	border-top: solid 1px #e8e8e8;
+    padding-top: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.shr_more_address em {
+    position: absolute;
+    width: 12px;
+    height: 13px;
+    background: url(../img/orderico.png) -18px 0 no-repeat;
+    top: 27px;
+    left: 55px;
+    cursor: pointer;
+}
+.orderbox{
+	/*width: 100%;
+	height: 200px;
+	background: red;*/
+	border-top: solid 1px #e8e8e8;
+    margin: 0 30px;
+    /*height: 200px;*/
+}
+.order-pay{
+	padding-bottom: 20px;
+}
+.order-pay-box{
+	padding-left: 20px;
+}
+.payment1 li{
+	float: left;
+}
+.payment1 li {
+    cursor: pointer;
+    float: left;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 25px;
+    border: solid 1px #ddd;
+    margin-right: 30px;
+    position: relative;
+}
+.payment1 li.pay_cur{
+	border: solid 1px #333;
+}
+.payment1 li.pay_cur>em{
+	display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/orderico.png) 0 0 no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.payments{
+	padding-top: 25px;
+}
+.payments .c_gray_2 {
+     
+}
+#cgray2{
+	color: #99B ; 
+}
+#cgray3{
+	color: #99B ; 
+}
+.pay_box_info{
+	margin-top: 15px;
+}
+.pay-requirement{
+	padding: 30px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+.pay-requirement table{
+	border-collapse: collapse;
+}
+.pay-requirement table td{
+	vertical-align: top;
+}
+.pay-requirement table td:first-child{
+	padding-top: 4px;
+    text-align: left;
+    width: 70px;
+    color: #555
+}
+.pay-requirement table textarea{
+	width: 628px;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    overflow: hidden;
+    /*color: #ccc;*/
+    resize: none;
+    outline: none;
+}
+table{
+	border-collapse:collapse ;
+}
+.order_proList th {
+    background: #f5f5f5;
+    height: 40px;
+    line-height: 40px;
+}
+.order_proList td {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+.order_coupon{
+	padding-top: 10px;
+}
+.orderbox_tit {
+    padding: 18px 0 25px 0;
+    font-size: 14px;
+    color: #333;
+}
+.orderCoupons {
+    padding-left: 20px;
+}
+#order_coupons li.select {
+    border: solid 1px #333;
+}
+#order_coupons li {
+    float: left;
+    height: 33px;
+    line-height: 33px;
+    padding: 0 25px;
+    border: solid 1px #ddd;
+    margin-right: 30px;
+    position: relative;
+    cursor: pointer;
+}
+#order_coupons li>em.select {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/orderico.png) 0 0 no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: ".";
+    visibility: hidden;
+    height: 0;
+}
+.tab_conbox {
+    padding-top: 25px;
+}
+.order_coupon_list .order_coupon_usable li {
+    background: url(../img/hongtiao.png) top center no-repeat;
+    padding-top: 20px;
+}
+.order_coupon_list li {
+    float: left;
+    width: 248px;
+    border: solid 1px #e8e8e8;
+    margin: 0 6px 6px 0;
+    box-shadow: 3px 3px 5px #eee;
+    position: relative;
+}
+.oc_price {
+    color: #333;
+    width: 90px;
+    margin-left: 10px;
+}
+.oc_price span {
+    font-size: 28px;
+    vertical-align: text-top;
+    line-height: 1;
+    margin: 0;
+}
+.float_l {
+    float: left;
+    display: inline;
+}
+.oc_rule {
+    width: 145px;
+    line-height: 1.6;
+}
+.oc_b {
+    padding: 5px 0;
+    margin: 0 25px;
+    border-top: dashed 1px #e8e8e8;
+    line-height: 1.8;
+}
+.float_r {
+    float: right;
+    display: inline;
+}
+.order_coupon_tip {
+    padding: 20px 0 17px 0;
+    color: #999;
+}
+.order_coupon_list .order_coupon_disable li {
+    background: url(../img/huitiao.png) top center repeat-x;
+    padding-top: 20px;
+}
+.order_proTips {
+    padding: 6px 0 0 0;
+}
+.tab_conbox_m{
+	display: none;
+}
+.tab_conbox_m.select{
+	display: block;
+}
+
+.order_coupons_m {
+    padding-bottom: 5px;
+}
+.order_coupons_m .order_coupons_int {
+    width: 200px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 3px;
+    vertical-align: middle;
+    border: solid 1px #ddd;
+    border-right: none;
+}
+.order_coupons_m .order_coupons_btn {
+    width: 56px;
+    height: 30px;
+    color: #333;
+    background: #fff;
+    border: solid 1px #ddd;
+    vertical-align: middle;
+}
+
+.order_total {
+    padding: 15px 25px;
+    background: #fcfcfc;
+    /*border: solid 1px #e8e8e8;*/
+    margin-top: 20px;
+}
+.order_total_box {
+    font-size: 14px;
+}
+.order_total_box table {
+    margin-left: 348px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.order_total_box th {
+    color: #999;
+    text-align: left;
+    padding: 5px 0
+}
+.order_btn {
+    padding: 20px 29px 40px 0;
+    text-align: right;
+}
+.order_pay_btn {
+    width: 160px;
+    height: 45px;
+    background: #c43f40;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 45px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.mas{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+}
+#sussess_cbs{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.ac_box .ac_box_tit .close_btn {
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+iframe{
+	width: 100%;
+	border: none;
+	height: 270px;
+	margin-top:50px;
+	
+} 

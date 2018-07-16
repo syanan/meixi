@@ -1,0 +1,67 @@
+html,body{width: 100%;height: 100%;}
+html{position: relative;}
+/*body{min-width: 1200px;}*/
+.main{}
+.full{width: 100%;min-width: 1200px;}
+.header{height:206px;}
+.download{background-color: #fafafa;}
+.download1{
+	height: 628px; 
+	/*border:1px solid red;*/
+	background-image: url('../images/Mz01.jpg');
+	background-position: center;
+	position: relative;
+}
+.download1>.download_btn{position: absolute;left: 20%;top:60%;}
+.download2{/*border:1px solid yellow;*/position: relative;text-align: center;}
+.download2>.download_btn{position: absolute;left: 20%;top:66%;}
+.download3{/*border:1px solid yellow;*/position: relative;text-align: center;}
+.download3>.download_btn{position: absolute;right: 20%;top:63%;}
+.download4{/*border:1px solid yellow;*/position: relative;text-align: center;}
+.download4>.download_btn{position: absolute;left: 20%;top:61%;}
+.download5{
+	/*border:1px solid black;*/
+	width: 100%;
+	height: 742px;
+	background-image: url('../images/Mz05.jpg');
+	background-position: center;
+}
+.download6{/*border:1px solid pink;*/position: relative;text-align: center;}
+.download6>.download_btn{position: absolute;left: 38%;top:66%;}
+/*.download_img{
+	text-align: center;position: relative;
+	border:1px solid blue;
+}*/
+.download_btn{/*border:1px solid green;*/display: inline-block;}
+.download_btn>a{
+	width: 150px;height: 50px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+	/*border:1px solid red;*/
+	/*position: absolute;*/
+}
+
+
+
+
+
+
+#layer{
+	width: 100%;height: 100%;
+	position: fixed;
+	left: 0;top: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.ac_box{
+	position: fixed;
+	top:50%;left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	
+}
+.close_btn{
+	height: 50px;width: 50px;
+	position: absolute;top: -9px;right: -8px;
+	cursor: pointer;
+}

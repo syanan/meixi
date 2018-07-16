@@ -1,0 +1,38 @@
+*{padding:0;margin:0;}
+html{
+	font-size: 12px;
+}
+html{
+	height: 100%;
+	width: 100%;
+}
+body{
+	height: 100%;
+	width: 100%;
+}
+/*去除无序列表项前面的小黑点*/
+ul{list-style:none;}
+i{
+	font-style:normal ;
+}
+em{
+	font-style: normal;
+}
+a{
+	/*去掉下划线*/
+	text-decoration:none;
+	/*字体颜色*/
+	color:black;
+}
+input{
+	outline: none;
+	border: none;
+	background: transparent;
+}
+/*清除浮动*/
+.clearfix:after{
+	content:'';
+	display:block;
+	width:0;height:0;
+	clear:both;
+}

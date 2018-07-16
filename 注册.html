@@ -1,0 +1,179 @@
+ <!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/注册.css" />
+		<title>注册</title>
+	</head>
+
+	<body>
+		<div class="mian">
+			<div class="header full">
+				<div class="member-header w">
+					<a href="">
+						<div class="logoBox"></div>
+					</a>
+					<div class="headerNav-r">
+						<div class="help">需要帮助？</div>
+						<div>
+							<span class="member_phone hico01"></span>4000-250-630
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="headerShadow full"></div>
+			<div class='memberMain full'>
+				<div class="login-form">
+					<form class="form-horizontal" action="">
+						<div class="member-m">
+							<div class="member-title">注冊美西账户</div>
+							<div class="member-li clearfix">
+								<div class="memberico03"></div>
+								<div class="memberint">
+									<input type="text" name="account" class="form-control" placeholder="请输入常用账号" />
+								</div>
+							</div>
+							<div class="clearfix">
+								<div class="verify-li clearfix" id="login-verify">
+									<div class="verifyint">
+										<input class="form-control" name="verify" type="text" placeholder="请输入验证码" />
+									</div>
+									<div class="all_img">
+										<img src="/member/index/code/0.04622180603538606" class="verifyImg" border="0" alt="点击刷新验证码" onclick="member_index.fleshVerify($(this))">
+									</div>
+								</div>
+								<div class="memberli clearfix">
+									<div class="memberico04"></div>
+									<div class="memberint ">
+										<input name="vcode" class="form-control" type="text" maxlength="6" placeholder="短信验证码">
+									</div>
+
+								</div>
+								<div class="register_ver">
+									<a class="acclink" href="javascript:void(0);" onclick="timeUp();">发送验证码</a>
+									<span class="ver_again" style="display:none;">
+                        					<span class="ver_time"></span> 重新发送
+									</span>
+								</div>
+
+							</div>
+							<div class="member-li1 clearfix">
+								<div class="memberico02"></div>
+								<div class="memberint">
+									<input type="password" class="form-control" name="pwd" placeholder="请输入密码" />
+
+								</div>
+							</div>
+							<div class="member-li1 clearfix">
+								<div class="memberico02"></div>
+								<div class="memberint">
+									<input type="password" class="form-control" name="pwd2" placeholder="请再次输入密码" />
+								</div>
+							</div>
+							<div class="men_err_msg">
+								<font id="msg" color="red">请输入手机号</font>&nbsp;&nbsp;&nbsp;
+								<font id="msg" color="red">登录名必须是手机号或者邮箱</font>&nbsp;&nbsp;&nbsp;
+								<font id="msg" color="red">请输入密码</font>&nbsp;&nbsp;&nbsp;
+								<font id="msg" color="red">用户名或密码错误</font>&nbsp;&nbsp;&nbsp;
+							</div>
+							<div class="member_form_btn">
+								<button type="button" class="btn btn-primary mgR8" onclick="member_index.registerSubmit($('#register_form'));">注册</button>
+							</div>
+
+						</div>
+						<div class="m_t">已注册？
+							<a class="acclink" href="登录.html">登录</a>
+						</div>
+
+					</form>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="contain">
+					<div class="">
+						<div class="pw-footer full">
+							<div class="pw-footer-top">
+								<ul class="clearfix w">
+									<li>
+										<div class="footer-icon03"></div>
+										<span>100%正品保障</span>
+									</li>
+									<li class="pw-footer-m">
+										<div class="footer-icon02"></div>
+										<span>7天无忧退货</span>
+									</li>
+									<li>
+										<div class="footer-icon01"></div>
+										<span>九年关注，品质保障</span>
+									</li>
+								</ul>
+							</div>
+							<div class="pw-footer-line"></div>
+							<div class="pw-footer-btm clearfix w">
+								<div class="pw-footer-btm1">
+									<ul>
+										<li style="border-left: none;">
+											<a href="/services/media.html" title="媒体报道" target="_blank">媒体报道</a>
+										</li>
+										<li>
+											<a href="/services/qualityAssurance.html" title="正品保证" target="_blank">正品保证</a>
+										</li>
+										<li>
+											<a href="/services/coop.html" title="业务合作" target="_blank">业务合作</a>
+										</li>
+										<li>
+											<a href="/services/privacy.html" title="隐私声明" target="_blank">隐私声明</a>
+										</li>
+										<li>
+											<a href="/services/join.html" title="加入美西" target="_blank">加入美西</a>
+										</li>
+										<li>
+											<a href="/services/contacts.html" title="联系我们" target="_blank">联系我们</a>
+										</li>
+									</ul>
+									<div>
+										<p>Copyright ©2008-2017，美西-高端时尚生活电商</p>
+									</div>
+									<div>
+										<span>沪ICP备09001221号</span>
+										<span>沪公网安备11010802017116号</span>
+									</div>
+								</div>
+								<div class="pw-footer-btm2"></div>
+								<div class="pw-footer-btm3">
+									<div id="pw-footer-btm3Div"><span>合作支持</span></div>
+									<ul class="clearfix">
+										<li class="partner_01" style="padding-top:5px;">
+											<a href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=dov73ne26zbqpz06h12ypxbndnhhch3lzn" target="_blank"></a>
+										</li>
+										<li class="partner_03" style="padding-top:6px;">
+											<a class="clearfix" href="http://cn.unionpay.com" target="_blank"><span style="margin-right: 4px;"></span><i class="float_l">银联特约商户</i></a>
+										</li>
+										<li class="partner_02" style="padding-top:5px;">
+											<a href="http://v.qq.com/fashion/" target="_blank"></a>
+										</li>
+										<li class="partner_04">
+											<a href="http://d1.sina.com.cn/minisite/meixi/index.html" target="_blank"></a>
+										</li>
+										<li class="partner_05" style="padding-top:4px;">
+											<a href="http://women.sohu.com/20090318/n262873311.shtml" target="_blank"></a>
+										</li>
+										<li class="partner_06" style="padding-right: 0;padding-top: 4px;">
+											<a href="http://www.haibao.com" target="_blank"></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</body>
+
+</html>

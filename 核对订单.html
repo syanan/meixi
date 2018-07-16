@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>核对订单</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/核对订单.css" />
+		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/核对订单.js"></script>
+	</head>
+
+	<body>
+		<div class="mian">
+			<div class="header full">
+				<div class="member-header w">
+					<a href="">
+						<div class="logoBox"></div>
+					</a>
+					<div class="headerNav-r">
+						<div class="help">需要帮助？</div>
+						<div>
+							<span class="member_phone hico01"></span>4000-250-630
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="headerShadow full"></div>
+			<div class="containerBox full">
+				<div class="orderNavBox full">
+					<div class="orderNav w"></div>
+				</div>
+				<div class="orderMain w">
+					<div class="orderMainBox ">
+						<p class="orderbox_tit clearfix">
+							<a class="float_l" name="shrxx" style="color:#333;">收货人信息</a>
+							<a class="shr_add_address acclink float_r" href="javascript:void(0);" onclick="saveAddress()">添加收货地址</a>
+						</p>
+						<div class="shrAddress">
+							<div class="shrAddress_box">
+								<ul class="all-adress">
+									<li class="aderess clearfix">
+										<div class="shr-name">
+											李旭
+											<em></em>
+										</div>
+										<div class="shr-adress">青岛市 城阳区 城阳街道</div>
+										<div class="shr-phone">175****0980</div>
+										<div class="shr-operation ">
+											<a href="javascript:void(0);">编辑</a>
+											<a href="javascript:void(0);" id="delAddress">删除 </a>
+										</div>
+									</li>
+								</ul>
+								<div class="shr_more_address"><span>展开地址</span><em></em></div>
+							</div>
+						</div>
+
+						<!--遮蓋層-->
+						<div class="cover">
+							<div id="bc01" class="ac_box ac_medium">
+								<div class="ac_box_tit">
+									<span>温馨提示</span>
+									<div class="close_btn shan">╳</div>
+								</div>
+								<div class="ac_box_msg">确定要删除该地址吗？</div>
+								<div class="ac_btn_box">
+									<a class="ab_btn01 delpro" href="javascript:void(0);" ng-click="confirm_del_one()">确认</a>
+									<a class="ab_btn02 close_btn" href="javascript:void(0);">取消</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="orderbox">
+						<p class="orderbox_tit">支付方式</p>
+						<div class="order-pay">
+							<div class="order-pay-box">
+								<ul id="payment" class="clearfix payment1">
+									<li class="thistab pay_cur">在线支付<em></em></li>
+									<li>快捷支付<em></em></li>
+
+								</ul>
+								<div class="payments">
+									<span id='cgray2' class="c_gray_2">支持多家银行借记卡、信用卡支付。支付宝支付，微信等多种支付平台；支持美西礼品卡支付。</span>
+								</div>
+								<div id='cgray3' class="c_gray_2" style="margin-top:6px;">*如有疑问请致电4000-250-630　　　　公司地址：上海市杨宅路258号A201</div>
+							</div>
+						</div>
+					</div>
+					<div class="orderbox">
+						<p class="orderbox_tit">配送信息</p>
+						<div class="order-pay">
+							<div class="order-pay-box">
+								<ul id="payment" class="clearfix payment1">
+									<li class="thistab pay_cur">所有日期均可收货<em></em></li>
+									<li>仅工作日收货<em></em></li>
+									<li>仅双休日，节假日收货<em></em></li>
+								</ul>
+								<div class="payments">
+									<span id='cgray2' class="c_gray_2">温馨提示：我们会努力按照您指定的时间配送，但因天气、交通等各类因素影响，您的订单有可能会有延误现象</span>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="orderbox">
+						<p class="orderbox_tit">包装方式</p>
+						<div class="order-pay">
+							<div class="order-pay-box">
+								<ul id="payment" class="clearfix payment1">
+									<li class="thistab pay_cur">美西标准包装（免费）<em></em></li>
+
+								</ul>
+								<div class="payments">
+									<span id='cgray2' class="c_gray_2">标准包装内放置我们的白色美西盒子，更加坚固的保护您的货品</span>
+								</div>
+								<div class="pay_box_info"><img src="img/pic_pack01.jpg"></div>
+								<div class="pay-requirement">
+									<table>
+										<tbody>
+
+											<tr>
+												<td>特殊要求</td>
+												<td>
+													<textarea class="pay_note" name="remark" id="memo" placeholder="您可在此输入特殊要求..." style="color: #555;"></textarea>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="orderbox">
+						<p class="orderbox_tit">商品清单</p>
+						<div class="order_proList">
+							<table width="100%">
+								<colgroup>
+									<col width="138">
+									<col width="250">
+									<col width="250">
+									<col width="250">
+									<col width="250">
+								</colgroup>
+
+								<tbody>
+									<tr>
+										<th>商品信息</th>
+										<th></th>
+										<th>单价</th>
+										<th>数量</th>
+										<th>小计</th>
+										<!--<th>商品图片</th><th>商品名称</th><th>单价</th><th>数量</th><th>小计</th>-->
+									</tr>
+									<tr>
+										<td>
+											<a href="/product/detail/id/372112/saleid/187484.html" target="_blank">
+												<img src="https://img3.meicicdn.com/u/LvProduct/pic/20180423/1007155add3fd36f2e3-800x960.jpg" width="50" height="60" alt=""></a>
+										</td>
+										<td class="order_proList_name">
+											<a href="/product/detail/id/372112/saleid/187484.html" target="_blank" title="Cerruti  纯棉 男士 短袖POLO衫">
+												Cerruti <br>纯棉 男士 短袖POLO衫 </a>
+											<div class="c_gray_2"><span style="margin-right: 5px;">颜色：蓝色</span> 尺码：L</div>
+											<!--全球购-->
+											<div class="ws_tip clearfix">
+											</div>
+										</td>
+										<td>￥820.00</td>
+										<td>1</td>
+										<td>￥820.00</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="">
+
+						</div>
+					</div>
+					<div class="orderbox">
+						<div class="order_coupon">
+							<!--<div class="order_coupon_txt">使用优惠券（<span>2</span>）<em></em></div>-->
+							<p class="orderbox_tit">使用优惠券</p>
+							<div class="orderCoupons">
+								<ul id="order_coupons" class="clearfix">
+									<li class="thistab select">可使用优惠券（2）<em class="select"></em></li>
+									<li class="exchangeCoupon">兑换优惠券<em></em></li>
+								</ul>
+								<div id="order_coupons_m" class="tab_conbox">
+									<div class="tab_conbox_m select">
+										<div class="order_coupon_list">
+											<div class="order_coupon_usable">
+												<ul class="clearfix">
+													<li onclick="selectCoupon(this)">
+														<div class="oc_t clearfix">
+															<div class="oc_price float_l">
+																￥<span>120</span> </div>
+															<div class="oc_rule float_r">
+																<span>满1500.00可抵用120元</span> <br>
+																<span class="c_gray_2">新人120元优惠券</span>
+															</div>
+														</div>
+														<div class="oc_b">
+															<span class="c_gray_2">使用期限：</span><br>
+															<span>2018/04/01 - 2018/05/31</span>
+														</div>
+														<input type="hidden" class="code" value="0RQYWAHN2DK">
+														<input type="hidden" class="id" value="5090482">
+														<input type="hidden" class="total_coupon_minus_price" value="120">
+														<em></em>
+													</li>
+													<li onclick="selectCoupon(this)">
+														<div class="oc_t clearfix">
+															<div class="oc_price float_l">
+																￥<span>68</span> </div>
+															<div class="oc_rule float_r">
+																<span>满600.00可抵用68元</span> <br>
+																<span class="c_gray_2">新人68元优惠券</span>
+															</div>
+														</div>
+														<div class="oc_b">
+															<span class="c_gray_2">使用期限：</span><br>
+															<span>2018/04/01 - 2018/05/31</span>
+														</div>
+														<input type="hidden" class="code" value="0YGOHS4W2SF">
+														<input type="hidden" class="id" value="5080482">
+														<input type="hidden" class="total_coupon_minus_price" value="68">
+														<em></em>
+													</li>
+												</ul>
+											</div>
+											<div class="order_coupon_tip">以下优惠劵暂不可用</div>
+
+											<div class="order_coupon_disable">
+												<ul class="clearfix">
+													<li>
+														<div class="oc_t clearfix">
+															<div class="oc_price float_l">
+																￥<span>500</span> </div>
+															<div class="oc_rule float_r">
+																<span>满5000.00可抵用500元</span> <br>
+																<span>新人500元优惠券</span>
+															</div>
+														</div>
+														<div class="oc_b">
+															<span>使用期限：</span><br>
+															<span>2018/04/01 - 2018/05/31</span>
+														</div>
+														<em></em>
+													</li>
+													<li>
+														<div class="oc_t clearfix">
+															<div class="oc_price float_l">
+																￥<span>400</span> </div>
+															<div class="oc_rule float_r">
+																<span>满3500.00可抵用400元</span> <br>
+																<span>新人400元优惠券</span>
+															</div>
+														</div>
+														<div class="oc_b">
+															<span>使用期限：</span><br>
+															<span>2018/04/01 - 2018/05/31</span>
+														</div>
+														<em></em>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+									</div>
+									<div class="tab_conbox_m">
+										<div class="order_coupons clearfix">
+											<div class="order_coupons_m float_l clearfix">
+												<input class="order_coupons_int float_l" type="text" name="code" value="">
+												<button class="order_coupons_btn float_l" type="button" onclick="checkCoupon()">使用</button>
+											</div>
+											<div class="oc_user float_l"></div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="order_proTips">* 特惠商品及部分指定品牌、品类不可使用优惠券；详情请参看商品介绍页面。</div>
+
+							</div>
+
+						</div>
+
+					</div>
+					<div class="order_total" style="border:none; border-top:solid 1px #e8e8e8;">
+						<div class="order_total_box clearfix">
+							<table class="float_r">
+								<colgroup>
+									<col width="150px">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>合　　计：</th>
+										<td>￥<span id="original_total">2870.00</span></td>
+									</tr>
+									<tr>
+										<th class="relative">运　　费：
+											<p></p>
+										</th>
+										<td class="c_gray_3">￥
+											<font id="YF">0.00</font>
+										</td>
+									</tr>
+
+									<tr>
+										<th>包　　装：</th>
+										<td class="c_gray_3">￥
+											<font id="package_fee">0.00</font>
+										</td>
+									</tr>
+									<tr>
+										<th style="letter-spacing:5.5px;">优惠券:</th>
+										<td class="c_gray_3"><span class="fuhao">-</span>￥
+											<font id="YHJ">0.00</font>
+										</td>
+									</tr>
+									<tr>
+										<th>活动折扣：</th>
+										<td>-￥<span id="activity_price">0.00</span></td>
+									</tr>
+
+									<tr>
+										<th>会员折扣：</th>
+										<td>-￥<span id="club_price">0.00</span></td>
+									</tr>
+
+									<tr>
+										<td colspan="2">
+											<div style="border-bottom: 1px solid #e8e8e8;height: 0;margin: 5px 0;"></div>
+										</td>
+									</tr>
+									<tr>
+										<th>总　　计：</th>
+										<td class="c_gray_3">￥<span id="orderTotal">2870.00</span></td>
+									</tr>
+								</tbody>
+							</table>
+
+							<!--<div class="order_btn clearfix"><button class="order_pay_btn float_r" type="button" onclick="createOrder()">提交订单</button></div>-->
+						</div>
+						<div class="order_btn" style="padding-right: 0;height: 45px;"><button class="order_pay_btn clearfix" id="order_pay_btn" type="button">提交订单</button></div>
+					</div>
+					<div class="mas">
+						<div id="sussess_cbs" class="ac_box ac_medium" >
+							<div class="ac_box_tit">
+								<span>温馨提示</span>
+								<div class="close_btn">╳</div>
+							</div>
+							<div class="ac_box_msg">您所购买的全球购商品因海关清关需要需完善收货人信息，<br>是否确认检查？</div>
+							<div class="ac_btn_box">
+								<input type="hidden" id="sussess_cbs_address_id" value="103446">
+								<input type="hidden" id="sussess_cbs_area" value="370214">
+								<a class="ab_btn01 ws_cbs_close delpro" href="javascript:void(0);">完善收货人信息</a>
+								<a class="ab_btn02 close_btn" href="javascript:void(0);" >已确认，提交订单</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<iframe src="footer.html" scrolling="no" width="" height=""></iframe>
+		</div>
+	</body>
+
+</html>

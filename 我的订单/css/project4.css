@@ -1,0 +1,205 @@
+.w{width: 1200px;margin:0 auto;}
+html,body{width: 100%;height: 100%;}
+.main{}
+.header{height:206px;width: 100%;/*border:1px solid red;*/}
+.account{/*border:1px solid red;*/}
+.account_left{border:1px solid #e8e8e8;;float: left;}
+.account_user{
+	border-bottom:1px dashed #ccc;
+	margin:0 15px;padding:20px 0 30px;
+	text-align: center;
+}
+.account_user>img{
+	border-radius: 50%;width: 100px;height: 100px;
+}
+.account_user>a{
+	/*border:1px solid orange;*/display: inline-block;
+	height: 20px;line-height: 20px;
+	font-size: 0;
+}
+.account_user>a>em{
+	/*border:1px solid green;*/
+	background-image: url('../images/member_level.gif');
+	/*background-position:*/ 
+	display: inline-block;
+	width: 20px;height: 20px;
+	vertical-align: middle;
+}
+.account_user>a>span{
+	vertical-align: middle;/*border:1px solid blue;*/
+	font-size: 12px;color: #666;margin-left: 5px;
+}
+.user_name{
+	/*border:1px solid pink;*/color: #333;font-weight: bold;
+	margin: 25px 0 10px;width: 146px;height: 18px;
+}
+.lever_up{
+	/*border:1px solid red;*/
+	width: 94px;height: 26px;
+	margin-top: 10px;margin-left: 26px;
+}
+.lever_up>a{
+	border:1px solid #ccc;display: inline-block;
+	width: 92px;height: 24px;background-color: #f5f5f5;
+	line-height: 24px;border-radius: 3px;color: #666;
+}
+.account_nav{
+	/*border:1px solid red;*/
+	padding: 20px 0;
+}
+.account_nav>ul>li>a{
+	/*border:1px solid orange;*/display: inline-block;
+	width: 100%;text-align: center;padding: 6px 0;
+	color: #777;
+}
+.account_nav>ul>li>a:hover{color: #333;}
+#mo{color: #333;}
+/*内容右边区域上部*/
+.account_right{
+	/*border:1px solid red;*/
+	float:right;
+}
+.order_top{
+	border-bottom:1px solid #e8e8e8;
+}
+.order_top>ul{float: left;}
+.order_top>ul>li{
+	float: left;font-size: 14px;
+	/*border:1px solid green;*/
+	position: relative;
+	height: 43px;
+}
+.order_top>ul>li>a{
+	/*border:1px solid orange;*/
+	display: inline-block;
+	margin: 6px 0;cursor: pointer;
+}
+.zero{color: #e8203b;}
+.order_top>ul>li:nth-child(1){margin-right: 22px;}
+
+.order_top>ul>li>a>em{
+	/*border:1px solid blue;*/
+	background-image: url('../images/headico.png');
+	background-position: -80px 0;
+	display:inline-block;width: 11px;height: 6px;
+}
+.order_top>ul>li>em.em_clicked{
+	display: block;background-image: url('../images/amt_tit.gif');
+	width: 22px;height: 12px;position: absolute;
+	bottom:-1px;left: 17px;
+}
+.allo{
+	/*vertical-align: middle;*/color: black;
+	font-weight: bold;
+}
+.navshow>a>em{/*vertical-align: middle;*/margin-bottom: 3px;}
+li.order_top_nav{
+	margin-right: 40px;
+}
+.order_top>div{
+	border:1px solid #e8e8e8;
+	float: right;width: 196px;
+}
+.order_top>div>input{
+	vertical-align: middle;
+	width: 155px;
+	border:none;outline: none;
+}
+.order_top>div>a{
+	background-image: url('../images/search.gif');
+	width: 36px;height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/*订单详情*/
+/*table{border-collapse: collapse;}*/
+.order_m{
+	border:1px solid #e8e8e8;
+	margin-top: 20px;
+}
+.order_m_top{
+	/*border:1px solid black;*/
+	background-color:#f8f8f8;
+	padding: 10px;
+    border-bottom: solid 1px #e8e8e8; 
+}
+.order_m_top>span{
+	display: inline-block;
+	/*width: 200px;*/color: #555;
+}
+.order_m_top>span:nth-child(1){
+	margin:0 210px 0 10px;
+
+}
+.order_m_top>span:nth-child(2){
+	margin-right: 230px;
+}
+.order_m_top>span:nth-child(3){
+	/*border:1px solid red;*/
+	
+	/*margin-left: 220px;*/
+	/*width: 190px;*/
+}
+table{
+	padding: 20px;
+	/*cellpadding='20';*/
+}
+tbody td:nth-child(1){
+	/*padding:0 20px 20px 0;*/
+}
+tbody td:nth-child(1)>div.td_img{
+	/*border:1px solid green;*/
+	float: left;padding: 2px 12px;
+}
+tbody td:nth-child(1)>div.td_img img{
+	width:75px;height: 90px; 
+}
+.td_m{
+	/*border:1px solid blue;*/
+	margin-left: 30px;display: inline-block;
+	margin-right: 40px;
+}
+.table_ls>a{
+	/*border:1px solid red;*/
+	color: #333;line-height: 1.7;font-size: 14px;
+}
+.table_ls>span{
+	display: block;color:#999;
+	margin-bottom: 3px;
+
+}
+.table_ls>em{
+	display: inline-block;
+	background-image: url('../images/saleTip1.png');
+	width: 50px;height: 30px;
+}
+tbody td:nth-child(2){
+	border-left: 1px dashed #e8e8e8;
+	border-right: 1px dashed #e8e8e8;
+	width: 200px;text-align: center;
+}
+tbody td:nth-child(3){
+	width: 200px;text-align: center;
+	border-right: 1px dashed #e8e8e8;
+	color: #e8203b;
+}
+tbody td:nth-child(4){
+	
+	width: 200px;text-align: center;
+}
+tbody td:nth-child(4)>a{
+	color: #6799cc;
+}
+.order_hid{
+	display: none;width: 997px;
+	padding-top: 120px;text-align: center;
+}
+.order_hid>span{
+	font-size: 24px;display: inline-block;
+	color: #999;margin-bottom: 30px;
+}
+.order_hid>a{
+    color: #669aca;display: block;
+}

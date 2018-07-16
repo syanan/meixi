@@ -1,0 +1,65 @@
+.w{width: 1200px;margin:0 auto;}
+html,body{width: 100%;height: 100%;}
+.main{}
+.header{height:206px;width: 100%;border:1px solid red;}
+.account{border:1px solid red;}
+.account_left{border:1px solid #e8e8e8;;float: left;}
+.account_user{
+	border-bottom:1px dashed #ccc;
+	margin:0 15px;padding:20px 0 30px;
+	text-align: center;
+}
+.account_user>img{
+	border-radius: 50%;width: 100px;height: 100px;
+}
+.account_user>a{
+	/*border:1px solid orange;*/display: inline-block;
+	height: 20px;line-height: 20px;
+	font-size: 0;
+}
+.account_user>a>em{
+	/*border:1px solid green;*/
+	background-image: url('../images/member_level.gif');
+	/*background-position:*/ 
+	display: inline-block;
+	width: 20px;height: 20px;
+	vertical-align: middle;
+}
+.account_user>a>span{
+	vertical-align: middle;/*border:1px solid blue;*/
+	font-size: 12px;color: #666;margin-left: 5px;
+}
+.user_name{
+	/*border:1px solid pink;*/color: #333;font-weight: bold;
+	margin: 25px 0 10px;width: 146px;height: 18px;
+}
+#pay{color:#333;}
+.lever_up{
+	/*border:1px solid red;*/
+	width: 94px;height: 26px;
+	margin-top: 10px;margin-left: 26px;
+}
+.lever_up>a{
+	border:1px solid #ccc;display: inline-block;
+	width: 92px;height: 24px;background-color: #f5f5f5;
+	line-height: 24px;border-radius: 3px;color: #666;
+}
+.account_nav{
+	/*border:1px solid red;*/
+	padding: 20px 0;
+}
+.account_nav>ul>li>a{
+	/*border:1px solid orange;*/display: inline-block;
+	width: 100%;text-align: center;padding: 6px 0;
+	color: #777;
+}
+.account_nav>ul>li>a:hover{color: #333;}
+.account_right{
+	border:1px solid #e8e8e8;
+	float: right;width: 998px;height: 276px;
+	text-align: center;line-height: 276px;
+
+}
+.account_right>span{
+	font-size: 24px;color: #999;
+}
